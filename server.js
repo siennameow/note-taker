@@ -2,7 +2,10 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs')
+let notes = require('.db/db.json')
 
+// Helper method for generating unique ids
+const uuid = require("uuid");
 // Sets up the Express App
 const app = express();
 const PORT = process.env.port || 3001;
@@ -28,7 +31,7 @@ app.get('*', (req, res) => {
 app.get('/api/notes', (req, res) => {
   // Send a message to the client
   res.json(`${req.method} request received to get notes`);
-  //read file and return all saved notes
+  //Read file and return all saved notes
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
     if (err) {
         console.error(err);
@@ -40,7 +43,32 @@ app.get('/api/notes', (req, res) => {
   console.info(`${req.method} request received to get notes`);
 });
         //POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
-
+app.post('/api/notes', (req,res) => {
+        // Log that a POST request was received
+        console.info(`${req.method} request received to add a review`); 
+        // Destructuring assignment for the items in req.body
+        const newNote = req.body;
+        newNote.id = uuid();
+        //Read db.json and parse it to object
+        fs.readFile('./db/db.json', 'utf8', (err, data) => {
+                if (err) {
+                    console.error(err);
+                  } else {
+                    notes = JSON.parse(data);
+                    //Add the request body object to db.json as a new object
+                    notes.push(newNote);  
+                //Once new note is added, revert object back to string and write it to db.json
+                fs.writeFile('./db/db.json',
+                JSON.stringify(notes),
+                (writeErr) =>
+                  writeErr
+                    ? console.error(writeErr)
+                    : console.info('Successfully updated reviews!')
+              )}
+        console.log(newNote);
+        res.json(newNote);
+        })   
+})
         //DELETE /api/notes/:id should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
 
 
