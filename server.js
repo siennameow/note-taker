@@ -2,10 +2,10 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs')
-let notes = require('.db/db.json')
+let notes = require('./db/db.json')
 
 // Helper method for generating unique ids
-const uuid = require("uuid");
+const uuid = require(".//helper/uuid");
 // Sets up the Express App
 const app = express();
 const PORT = process.env.port || 3001;
