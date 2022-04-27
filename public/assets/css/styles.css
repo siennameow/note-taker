@@ -5,6 +5,20 @@ body {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5 , h6 {
+  font-family:'Caveat', cursive;
+}
+
+h1.display-4 {
+  font-size: 60pt;
+  letter-spacing: 1.5pt;
+}
+
+h4.subtitle {
+  font-size: 35pt;
+  letter-spacing: 1pt;
+}
+
 .save-note {
   display: none;
 }
@@ -38,7 +52,7 @@ body {
 
 .note-title:read-only,
 .note-textarea:read-only {
-  color: #757575;
+  color: #87a3b2;
 }
 
 .list-container .card {
@@ -75,4 +89,11 @@ body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+  font-family:'Caveat', cursive;
+  font-size: 24pt;
+  letter-spacing: 1pt;
+}
+
+.container-bg {
+  background-color: #dbe8f9;
 }
