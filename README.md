@@ -21,7 +21,7 @@ Deployed Application : https://note-taker-platinum.herokuapp.com/
 * [Credits 🙌](#credits-)
 
 ## Application Preview ⭐
- 
+
 
 ## Features 📋
 
