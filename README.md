@@ -27,7 +27,9 @@ Deployed Application : https://note-taker-platinum.herokuapp.com/
 
 ⚡️ `Express.js` to build server\
 ⚡️ `fs(File System)` module to read and write from 'db.json' file.\
+⚡️ `path` module to Joins the specified paths into one\
 ⚡️ deployed on [heroku](http://heroku.com/)
+
 
 ## Code Snippet 💻
 
