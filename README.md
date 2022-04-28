@@ -12,10 +12,9 @@ Deployed Application : https://note-taker-platinum.herokuapp.com/
 
 * [Application Preview ⭐](#application-preview-)
 * [Features 📋](#features-)
-* [Code-Snippet 💻](#code-snippet-)
-*  [Installation 🗳](#installation-)
+* [Code Snippet 💻](#code-snippet-)
+* [Installation 🗳](#installation-)
 * [Usage 💡](#usage-)
-* [Skill-Improved 📚](#skill-improved-)
 * [Technologies 🔧](#technologies-)
 * [Contribution 👩🏻‍💻](#contribution-)
 * [Questions ❓](#questions-)
@@ -26,15 +25,15 @@ Deployed Application : https://note-taker-platinum.herokuapp.com/
 
 ## Features 📋
 
-⚡️ `Express.js` to build server
-⚡️ `fs(File System)` module to read and write from 'db.json' file.
+⚡️ `Express.js` to build server\
+⚡️ `fs(File System)` module to read and write from 'db.json' file.\
 ⚡️ deployed on [heroku](http://heroku.com/)
 
-## Code-Snippet 💻
+## Code Snippet 💻
 
 JavaScript
 
-API route DELETE created to receive a query parameter that contains the id of a note to delete. It reads all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
+API route DELETE to receive a query parameter that contains the id of a note to delete. It reads all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
 
 ```JavaScript
 app.delete('/api/notes/:id', (req, res) => {
@@ -88,15 +87,6 @@ After installation :
 
 You can also check the Deployed Live Application : https://note-taker-platinum.herokuapp.com/
 
-## Skill Improved 📚
-✔️ Node.js\
-✔️ Express.js\
-✔️ Backend Application\
-✔️ Api routes\
-✔️ Javascript\
-✔️ JSON\
-✔️ Heroku
-
 ## Technologies 🔧
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -104,6 +94,8 @@ You can also check the Deployed Live Application : https://note-taker-platinum.h
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Express.js](https://expressjs.com/)
 * [Node.js](https://nodejs.org/en/)
+* [Heroku](https://www.heroku.com/home)
+* [JSON](https://www.json.org/json-en.html)
 
 ## License 📜
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/siennameow/note-taker/blob/main/LICENSE)
