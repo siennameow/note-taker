@@ -29,9 +29,7 @@ Demo
 Application Preview:
 | Main Page | Note Page |
 |-----------|-----------|
-|  ![Screen Shot 2022-04-27 at 7 02 06 PM](https://user-images.githubusercontent.com/101283174/165661564-66bb996e-1e7b-403e-b52a-c3ea87c03751.png)
-    |  ![Screen Shot 2022-04-27 at 7 02 18 PM](https://user-images.githubusercontent.com/101283174/165661771-103632f6-ff10-473d-931a-c34a14fac301.png)
-   |
+|![Screen Shot 2022-04-27 at 7 02 06 PM](https://user-images.githubusercontent.com/101283174/165661564-66bb996e-1e7b-403e-b52a-c3ea87c03751.png)|  ![Screen Shot 2022-04-27 at 7 02 18 PM](https://user-images.githubusercontent.com/101283174/165661771-103632f6-ff10-473d-931a-c34a14fac301.png)|
 
 ## Features 📋
 
