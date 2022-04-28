@@ -85,7 +85,7 @@ app.post('/api/notes', (req, res) => {
 - Download or clone repository to use this application on local machine.
 - Node.js is required to run the application
 - To install necessary dependencies, run the following command :
-    `npm i`
+>    `npm i`
 
 ## Usage 💡
 
