@@ -22,6 +22,16 @@ Deployed Application : https://note-taker-platinum.herokuapp.com/
 
 ## Application Preview ⭐
 
+Demo
+
+![Note Taker](https://user-images.githubusercontent.com/101283174/165661673-3e30d689-172e-40e8-8755-4aa7a33d6413.gif)
+
+Application Preview:
+| Main Page | Note Page |
+|-----------|-----------|
+|  ![Screen Shot 2022-04-27 at 7 02 06 PM](https://user-images.githubusercontent.com/101283174/165661564-66bb996e-1e7b-403e-b52a-c3ea87c03751.png)
+    |     ![Screen Shot 2022-04-27 at 7 02 18 PM](https://user-images.githubusercontent.com/101283174/165661579-37deb231-5ed0-4d46-886c-8ab2766c634e.png)
+      |
 
 ## Features 📋
 
