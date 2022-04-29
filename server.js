@@ -44,7 +44,7 @@ app.post('/api/notes', (req, res) => {
     //Once new note is added, revert object back to string and write it to db.json
     fs.writeFile('./db/db.json', JSON.stringify(notes), (err, data) => {
       if (err) throw err;
-      res.json(addNote);
+      res.json(notes);
       console.info('Successfully updated notes!')
     });
   }); 
